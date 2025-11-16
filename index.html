@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesis Playground – Multi-sensory Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo-link">
+          <span class="logo-mark" aria-hidden="true">✷</span>
+          <span class="logo-text">Thesis Playground</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index.html" class="nav-link nav-link-active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 id="hero-title">A small playground for feedback</h1>
+            <p class="hero-lead">
+              This space is for Deaf and Hard-of-Hearing folks (and supporters) to
+              peek at my thesis progress on multi-sensory entertainment and leave
+              quick, low-pressure reactions.
+            </p>
+            <ul class="hero-list">
+              <li>No account. No scheduled calls.</li>
+              <li>Short cards instead of long papers.</li>
+              <li>React with emojis or a quick note.</li>
+            </ul>
+            <p class="hero-note">
+              Your feedback is stored only on <strong>this device</strong> for now.
+              A future version may collect anonymous feedback across devices.
+            </p>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="hero-card-pill">Multi-sensory</div>
+            <div class="hero-card-block hero-card-block-main">
+              <p>“How can entertainment feel rich without sound?”</p>
+            </div>
+            <div class="hero-card-block hero-card-block-secondary">
+              <span>Try tapping a card below ↓</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feed-section" aria-labelledby="feed-title">
+        <div class="container">
+          <div class="feed-header">
+            <h2 id="feed-title">Thesis log</h2>
+            <p class="feed-subtitle">
+              Small snapshots of what I’m exploring. Tap a card to see more and leave a reaction.
+            </p>
+          </div>
+
+          <div
+            id="posts-grid"
+            class="posts-grid"
+            role="list"
+            aria-label="Thesis updates"
+          >
+            <!-- Cards injected by app.js -->
+          </div>
+
+          <section
+            id="post-detail"
+            class="post-detail"
+            aria-live="polite"
+            aria-atomic="false"
+          >
+            <!-- Active post detail will be rendered here -->
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          Built for Deaf/HoH-friendly, low-pressure feedback.
+          <span class="footer-dot" aria-hidden="true">•</span>
+          <a href="about.html">Learn more about the thesis</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
